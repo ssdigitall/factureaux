@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082F49" />
+      <stop offset="50%" stop-color="#0c4a75" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284C7" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring Aura -->
+  <circle cx="256" cy="270" r="170" fill="none" stroke="#38BDF8" stroke-width="4" stroke-opacity="0.2" stroke-dasharray="12 12" />
+
+  <!-- Water Drop Shadow & Body -->
+  <g filter="url(#shadow)">
+    <path d="M256 96 C256 96 144 246 144 330 C144 391.85 194.15 442 256 442 C317.85 442 368 391.85 368 330 C368 246 256 96 256 96 Z" fill="url(#dropGrad)" />
+  </g>
+
+  <!-- Water Drop Inner Shimmer Highlight -->
+  <path d="M256 128 C256 128 174 254 174 326 C174 348 182 368 196 384 C190 358 196 332 216 302 C236 272 256 220 256 128 Z" fill="url(#glowGrad)" />
+
+  <!-- Base Water Ripple -->
+  <ellipse cx="256" cy="410" rx="60" ry="14" fill="#082F49" fill-opacity="0.2" />
+
+  <!-- Small Splash Droplet -->
+  <circle cx="340" cy="190" r="14" fill="#38BDF8" fill-opacity="0.7" />
+  <circle cx="170" cy="230" r="10" fill="#38BDF8" fill-opacity="0.5" />
+</svg>

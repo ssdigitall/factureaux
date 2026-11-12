@@ -1,0 +1,8 @@
+{
+  "name": "FACTUREAU - Gestion Intelligente des Forages & Distribution d'Eau",
+  "description": "Plateforme SaaS premium de gestion des forages, abonnés, compteurs, facturation, caisse, paiements mobiles (Wave, Orange Money, PayDunya) et production d'eau pour l'Afrique francophone.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
